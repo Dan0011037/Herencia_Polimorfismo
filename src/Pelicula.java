@@ -1,11 +1,18 @@
-public class Pelicula extends Video{
-    private String director;
-    private String valoracion;
+package VIDEO;
 
-    public Pelicula(String titulo, int minutos){
-        super(titulo, minutos);
+public class Pelicula extends Video {
+    private String director;
+    private int valoracion;
+
+    public Pelicula(String titulo, int minutos,int precio , String director, int valoracion){
+        super(titulo, minutos, precio);
         this.director = director;
         this. valoracion = valoracion;
     }
+    @Override
+    public String toString(){
+        return "VIDEO.Pelicula (director= "+ director+ ", valoracion= "+ valoracion + ")";
+    }
+
 
 }
