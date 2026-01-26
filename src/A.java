@@ -8,4 +8,7 @@ public class A {
         this.primera = primera;
         this. vocal = vocal;
     }
+
+    public A(String letra, String primera) {
+    }
 }

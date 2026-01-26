@@ -1,3 +1,7 @@
+import VIDEO.Pelicula;
+import VIDEO.Video;
+import VIDEO.VideoMusical;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -92,6 +96,14 @@ public class Main {
         9. en la sobrecarga tenemos
          varios métodos con el mismo nombre pero diferentes parámetros
          */
+
+        //11.
+        Video ob1 = new Video("VHS", 90, 34);
+        Pelicula ob2 = new Pelicula("ET", 120, 34, "Spielberg", 10 );
+        VideoMusical ob3 = new VideoMusical("algo", 3, 34, "yo", "si");
+        System.out.println(ob1.toString());
+        System.out.println(ob2.toString());
+        System.out.println(ob3.toString());
     }
 
 }
