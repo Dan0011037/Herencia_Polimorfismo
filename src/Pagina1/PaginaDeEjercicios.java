@@ -1,7 +1,7 @@
-package Pagina1;
+public class Main {
+    public static void main(String[] args) {
 
-public class PaginaDeEjercicios {
-    /*
+        /*
         1.
         a. ¿Cuántos tipos de automóviles hay en el diagrama?
           hay 1 tipo, ford
@@ -72,11 +72,11 @@ public class PaginaDeEjercicios {
 
         /*
         7.
-        a. La clase Pagina1.A es una clase padre de la clase C.
-        b. La clase Pagina1.B es nada de la clase C.
-        c. La clase E es una subclase de la clase Pagina1.A.
-        d. La clase D es una subclase de la clase Pagina1.B.
-        e. La clase Pagina1.A es una clase padre de la clase D
+        a. La clase A es una clase padre de la clase C.
+        b. La clase B es nada de la clase C.
+        c. La clase E es una subclase de la clase A.
+        d. La clase D es una subclase de la clase B.
+        e. La clase A es una clase padre de la clase D
          */
 
 
@@ -92,13 +92,6 @@ public class PaginaDeEjercicios {
         9. en la sobrecarga tenemos
          varios métodos con el mismo nombre pero diferentes parámetros
          */
+    }
 
-        /*11.
-        Video ob1 = new Video("VHS", 90, 34);
-        Pelicula ob2 = new Pelicula("ET", 120, 34, "Spielberg", 10 );
-        VideoMusical ob3 = new VideoMusical("algo", 3, 34, "yo", "si");
-        System.out.println(ob1.toString());
-        System.out.println(ob2.toString());
-        System.out.println(ob3.toString());
-         */
 }
