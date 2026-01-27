@@ -1,3 +1,5 @@
+package Pagina1;
+
 public class PaginaDeEjercicios {
     /*
         1.
@@ -70,11 +72,11 @@ public class PaginaDeEjercicios {
 
         /*
         7.
-        a. La clase A es una clase padre de la clase C.
-        b. La clase B es nada de la clase C.
-        c. La clase E es una subclase de la clase A.
-        d. La clase D es una subclase de la clase B.
-        e. La clase A es una clase padre de la clase D
+        a. La clase Pagina1.A es una clase padre de la clase C.
+        b. La clase Pagina1.B es nada de la clase C.
+        c. La clase E es una subclase de la clase Pagina1.A.
+        d. La clase D es una subclase de la clase Pagina1.B.
+        e. La clase Pagina1.A es una clase padre de la clase D
          */
 
 

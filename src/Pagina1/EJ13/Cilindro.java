@@ -1,4 +1,6 @@
-public class Cilindro extends Circulo{
+package Pagina1.EJ13;
+
+public class Cilindro extends Circulo {
     double altura;
 
     public Cilindro(double radio, double altura) {
@@ -19,6 +21,6 @@ public class Cilindro extends Circulo{
 
     @Override
     public String toString(){
-        return "Cilindro: (altura= " + altura + ", radio= " + radio + ", volumen= " + getVolumen() + ")";
+        return "Pagina1.EJ13.Cilindro: (altura= " + altura + ", radio= " + radio + ", volumen= " + getVolumen() + ")";
     }
 }

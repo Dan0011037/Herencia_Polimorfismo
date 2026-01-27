@@ -1,4 +1,4 @@
-package VIDEO;
+package Pagina1.VIDEO;
 
 public class Pelicula extends Video {
     private String director;
@@ -11,7 +11,7 @@ public class Pelicula extends Video {
     }
     @Override
     public String toString(){
-        return "VIDEO.Pelicula (director= "+ director+ ", valoracion= "+ valoracion + ")";
+        return "Pagina1.VIDEO.Pelicula (director= "+ director+ ", valoracion= "+ valoracion + ")";
     }
 
 

@@ -1,4 +1,4 @@
-package VEHICULO;
+package Pagina1.VEHICULO;
 
 public class Vehiculo {
     private String nombre;

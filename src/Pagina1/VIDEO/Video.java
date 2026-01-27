@@ -1,4 +1,4 @@
-package VIDEO;
+package Pagina1.VIDEO;
 
 public class Video {
     private String titulo;
@@ -12,7 +12,7 @@ public class Video {
     }
     @Override
     public String toString(){
-        return "VIDEO.Video (titulo= "+ titulo+ ", minutos= "+minutos + ", precio= "+ precio + ")";
+        return "Pagina1.VIDEO.Video (titulo= "+ titulo+ ", minutos= "+minutos + ", precio= "+ precio + ")";
     }
 }
 

@@ -1,8 +1,7 @@
-import VIDEO.Pelicula;
-import VIDEO.Video;
-import VIDEO.VideoMusical;
+package Pagina1;
 
-import java.util.Scanner;
+import Pagina1.EJ13.Cilindro;
+import Pagina1.EJ13.Circulo;
 
 public class Main {
     public static void main(String[] args) {

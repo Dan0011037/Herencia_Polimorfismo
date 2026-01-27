@@ -1,3 +1,5 @@
+package Pagina1.EJ13;
+
 public class Circulo {
     double radio;
 
@@ -20,6 +22,6 @@ public class Circulo {
 
     @Override
     public String toString(){
-        return "Circulo: (radio= " + radio + ", area= " + getArea() + ")";
+        return "Pagina1.EJ13.Circulo: (radio= " + radio + ", area= " + getArea() + ")";
     }
 }

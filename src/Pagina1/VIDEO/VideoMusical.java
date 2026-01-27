@@ -1,4 +1,4 @@
-package VIDEO;
+package Pagina1.VIDEO;
 
 public class VideoMusical extends Video {
     String artista;
@@ -12,6 +12,6 @@ public class VideoMusical extends Video {
 
     @Override
     public String toString(){
-        return "VIDEO.Video musical (artista= "+ artista+ ", categoria= "+categoria +")";
+        return "Pagina1.VIDEO.Video musical (artista= "+ artista+ ", categoria= "+categoria +")";
     }
 }
