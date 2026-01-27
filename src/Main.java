@@ -20,7 +20,7 @@ public class Main {
         Techo techo = new Techo("Blanco", 2);
         Lampara lampara = new Lampara("Rococo",true, 10);
         Cama cama = new Cama(3, "Coquette", 1, 3, 1);
-        Habitacion habitacion = new Habitacion("Mi habitacion", pared1, pared2, pared3, pared4, techo, lampra, cama);
+        Habitacion habitacion = new Habitacion("Mi habitacion", pared1, pared2, pared3, pared4, techo, lampara, cama);
 
         habitacion.hacerLaCama();
         habitacion.getLampara().encender();
