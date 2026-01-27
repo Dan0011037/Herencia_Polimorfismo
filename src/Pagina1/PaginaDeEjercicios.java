@@ -1,6 +1,5 @@
-public class Main {
-    public static void main(String[] args) {
-
+package Pagina1;
+public class PaginaDeEjercicios {
         /*
         1.
         a. ¿Cuántos tipos de automóviles hay en el diagrama?
@@ -92,6 +91,5 @@ public class Main {
         9. en la sobrecarga tenemos
          varios métodos con el mismo nombre pero diferentes parámetros
          */
-    }
-
 }
+
