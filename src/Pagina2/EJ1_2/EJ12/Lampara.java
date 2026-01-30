@@ -1,4 +1,4 @@
-package Pagina2.EJ1_2;
+package Pagina2.EJ1_2.EJ12;
 
 public class Lampara {
     private String estilo;

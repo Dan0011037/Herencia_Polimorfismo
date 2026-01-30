@@ -1,6 +1,4 @@
-import Pagina1.EJ13.Cilindro;
-import Pagina1.EJ13.Circulo;
-import Pagina2.EJ1_2.*;
+import Pagina2.EJ1_2.EJ12.*;
 
 public class Main {
     public static void main(String[] args) {
