@@ -1,9 +1,11 @@
 package Pagina2.EJ1_2.EJ3;
 
-public class mainEncapsulacion {
-    public static void mainEcapsulacion(String[] args){
+class MainEncapsulacion {
 
-        Impresora impresora = new Impresora(50, 90,false);
-        Paginas paginas = new Paginas(50,90,false,90);
+    public static void main(String[] args) {
+        Impresora impresora = new Impresora(10, 20, true);
+
+        System.out.println("Toner añadido: " + impresora.setToner(0));
+        System.out.println("Caras impresas: " + impresora.setNumPaginasImpresas());
     }
 }

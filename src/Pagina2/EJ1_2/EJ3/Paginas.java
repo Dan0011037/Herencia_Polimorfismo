@@ -13,7 +13,7 @@ public class Paginas extends Impresora {
             System.out.println("No se puede imprimir");
             paginasAImprimir = 0;
         } else if (isImpDobleCara()) {
-            paginasAImprimir =+2;
+            paginasAImprimir +=2;
         }else {
             paginasAImprimir++;
         }

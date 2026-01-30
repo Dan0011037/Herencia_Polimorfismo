@@ -13,8 +13,10 @@ public class Impresora {
         this.impDobleCara = impDobleCara;
     }
 
+
+
     public boolean isImpDobleCara() {
-        if (true){
+        if (this.impDobleCara){
             System.out.println("Puede imprimir doble cara.");
         }else {
             System.out.println("No puede imrpimir doble cara.");
@@ -22,27 +24,33 @@ public class Impresora {
         return impDobleCara;
     }
 
-    public int getNumPaginasImpresas() {return numPaginasImpresas;
+    public int getNumPaginasImpresas() {
+        return numPaginasImpresas;
+    }
+
+    public int setNumPaginasImpresas() {
+        if (impDobleCara) {
+            System.out.println("Impresion doble cara, se imprimirá el doble.");
+            return numPaginasImpresas * 2;
+        }
+        return numPaginasImpresas++;
     }
 
     public int getToner(){
-        toner =- numPaginasImpresas;
         return toner;
     }
 
-    public int añadirToner(){
-        if (toner < 0){
-            System.out.println("ERROR -1");
-        }if (toner <= 10 || toner > 0){
-            System.out.println("Toner actual= " + toner);
-            System.out.println("Poco toner, añadiendo...");
-            toner=+50;
-        }else{
-            if (toner > 10 || toner < 100){
-                System.out.println("Toner actual= " + toner);
-                System.out.println("Toner suficiente, imprimiendo...");
-            }
+    public int setToner(int anadirCantidad){
+        if (anadirCantidad < 0 || anadirCantidad > 100){
+            System.out.println("Imposible añaidr.");
+            return -1;
+        }else if (toner + anadirCantidad >= 100){
+            System.out.println("Imposible añadir, toner actual + añadido es demasiado.");
+            return -1;
+        }else if (toner <= 0){
+            numPaginasImpresas = 0;
+            System.out.println("Toner insuficiente.");
         }
-        return toner++;
+        return anadirCantidad;
     }
 }
