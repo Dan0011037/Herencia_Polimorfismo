@@ -1,4 +1,4 @@
-package Pagina3;
+package Pagina3.EJ3;
 
 public class Coche {
     private String modelo;
@@ -11,14 +11,21 @@ public class Coche {
         this.cilindros = cilindros;
     }
 
+
     public void arrancar(){
-        System.out.println("El coche arranca...");
-    }
+        System.out.println("El coche arranca...");}
     public void acelerar(){
-        System.out.println("El coche acelera!");
-    }
+        System.out.println("El coche acelera!");}
     public void frenar(){
-        System.out.println("El coche frena!");
+        System.out.println("El coche frena!");}
+
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public boolean isMotor() {
+        return motor;
     }
 
 }
