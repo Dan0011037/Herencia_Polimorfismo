@@ -12,10 +12,12 @@ public class Preguntas {
     -Cindy saldrá como destinataria y tiene 17 años.
     "Querido Cindy, Feliz 17 Aniversario."
 
-    b
+
+    b)
+    c es tarjeta y es el padre.
     v = new SanValentin("Fiona", 3);
     La clase San Valentin es llamada como v,
-    c es targeta y b aniversario, por lo q no son correctas.
+    aniversario, por lo q no son correctas.
     Tambien h es vacaciones no aniversario
      */
 

@@ -4,12 +4,12 @@ import javax.crypto.spec.PSource;
 
 public class Impresora {
     private int toner;
-    private int numPaginasImpresas;
+    private int numPaginasYAImpresas;
     private boolean impDobleCara;
 
-    public Impresora(int toner, int numPaginasImpresas, boolean impDobleCara) {
+    public Impresora(int toner, int numPaginasYAImpresas, boolean impDobleCara) {
         this.toner = toner;
-        this.numPaginasImpresas = numPaginasImpresas;
+        this.numPaginasYAImpresas = numPaginasYAImpresas;
         this.impDobleCara = impDobleCara;
     }
 
@@ -24,17 +24,26 @@ public class Impresora {
         return impDobleCara;
     }
 
-    public int getNumPaginasImpresas() {
-        return numPaginasImpresas;
+
+
+    public int getNumPaginasYAImpresas() {
+        return numPaginasYAImpresas;
     }
 
-    public int setNumPaginasImpresas() {
-        if (impDobleCara) {
-            System.out.println("Impresion doble cara, se imprimirá el doble.");
-            return numPaginasImpresas * 2;
+    public int calculoNumPag(int pImpresas) {
+        if (impDobleCara){
+            System.out.println("Impresion doble cara.");
+            pImpresas = numPaginasYAImpresas/2;
+            if (numPaginasYAImpresas % 2 == 1) {
+                pImpresas++;
+            }
+            pImpresas += numPaginasYAImpresas;
+        }else {
+            pImpresas += numPaginasYAImpresas;
         }
-        return numPaginasImpresas++;
+        return pImpresas;
     }
+
 
     public int getToner(){
         return toner;
@@ -48,7 +57,7 @@ public class Impresora {
             System.out.println("Imposible añadir, toner actual + añadido es demasiado.");
             return -1;
         }else if (toner <= 0){
-            numPaginasImpresas = 0;
+            numPaginasYAImpresas = 0;
             System.out.println("Toner insuficiente.");
         }
         return anadirCantidad;

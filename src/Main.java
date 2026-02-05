@@ -1,3 +1,5 @@
+import Pagina1.EJ13.Cilindro;
+import Pagina1.EJ13.Circulo;
 import Pagina2.EJ1_2.EJ12.*;
 
 public class Main {
@@ -10,7 +12,17 @@ public class Main {
         System.out.println(cilindro.toString());
         */
 
-        //1.2
+
+
+
+        Circulo a = new Cilindro(2,2);
+        Cilindro pe = (Cilindro)a;
+
+        Circulo c2 = (Circulo) new Cilindro(3,3);
+        Circulo c3 = new Cilindro(2,3);
+
+
+        /*1.2
         Pared pared1 = new Pared("norte");
         Pared pared2 = new Pared("Sur");
         Pared pared3 = new Pared("Este");
@@ -25,6 +37,7 @@ public class Main {
         habitacion.getLampara().encender();
         System.out.println("---");
         habitacion.cogerPeluche();
+         */
 
 
 
