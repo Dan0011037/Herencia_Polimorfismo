@@ -1,13 +1,10 @@
 package Pagina4.INTERFACES.ej4_5;
 
-public class Comida implements Imponible {
+public class Comida extends Bienes{
     private double calorias;
 
-    public Comida(double calorias) {
+    public Comida(double calorias, String descripcion, double precio) {
+        super(descripcion, precio);
         this.calorias = calorias;
-    }
-    @Override
-    public double calcularImpuestos() {
-        return impuestos;
     }
 }

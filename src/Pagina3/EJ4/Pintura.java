@@ -8,7 +8,6 @@ public class Pintura {
     }
 
     public double pinturaNecesaria(Forma forma){
-        //modificar
         return forma.area()/cobertura;
     }
 }

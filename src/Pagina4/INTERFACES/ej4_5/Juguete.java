@@ -1,14 +1,19 @@
 package Pagina4.INTERFACES.ej4_5;
 
-public class Juguete implements Imponible{
+public class Juguete extends Bienes implements Imponible{
     private int edadMinima;
 
-    public Juguete(int edadMinima) {
+    public Juguete(int edadMinima, String descripcion, double precio) {
+        super(descripcion, precio);
         this.edadMinima = edadMinima;
     }
 
-    @Override
     public double calcularImpuestos() {
-        return impuestos;
+        return getPrecio() + (impuestos * getPrecio());
+    }
+
+    @Override
+    public String toString() {
+        return ("edad: " + edadMinima + " | descripcion: " + getDescripcion());
     }
 }
