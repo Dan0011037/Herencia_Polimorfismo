@@ -6,6 +6,9 @@ import Pagina5.ej1.subClase;
 import Pagina5.empleado.HourlyEmployee;
 import Pagina5.empleado.SalaryEmployee;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class MainAbstraccion {
     public static void main(String[] args) {
         /*
@@ -58,12 +61,16 @@ public class MainAbstraccion {
         Estudiante estudiante4 = new Estudiante("Alicia", 52, 168);
         Estudiante estudiante5 = new Estudiante("Alberto", 35, 189);
 
-        if (estudiante3.compareTo(estudiante5) < 0){
-            System.out.println("El primer estudiante es mas bajo.");
-        }else if (estudiante3.compareTo(estudiante5) > 0) {
-            System.out.println("El primer estudiante es mas alto.");
-        }else {
-            System.out.println("Los dos son igual de altos.");
+        Estudiante array[] = {estudiante1, estudiante2, estudiante3, estudiante4, estudiante5};
+        Arrays.sort(array);
+        array[0] = estudiante1;
+        array[1] = estudiante2;
+        array[2] = estudiante3;
+        array[3] = estudiante4;
+        array[4] = estudiante5;
+
+        for (int i = 0; i < array.length; i++){
+            System.out.println(i + ". " + array[i].toString());
         }
     }
 }
